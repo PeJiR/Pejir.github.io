@@ -10,7 +10,7 @@ def main():
 
     The function keeps prompting the user for a shape until an
     empty string is entered.
-    """
+    """   
 
     while True: 
         # Prompt the user for a shape
