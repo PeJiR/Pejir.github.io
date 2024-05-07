@@ -8,7 +8,7 @@ def acronyms(s):
     Args:
         s (str): The input string.
     
-    Returns:
+    Returns: 
         list: A list of acronyms.
     """
     
