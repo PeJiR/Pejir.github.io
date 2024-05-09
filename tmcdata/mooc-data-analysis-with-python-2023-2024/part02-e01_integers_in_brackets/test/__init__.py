@@ -1,0 +1,1 @@
+print(list("ä".encode("utf-8")) )
