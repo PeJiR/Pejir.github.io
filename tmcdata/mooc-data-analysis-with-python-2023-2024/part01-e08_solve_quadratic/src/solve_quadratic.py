@@ -28,9 +28,9 @@ def solve_quadratic(a, b, c):
     return (x1, x2)
          
 
-def main():   
-        
-    print(solve_quadratic(1,2,1))
+
+def main():
+    print(solve_quadratic(1,2,3))
 
 if __name__ == "__main__":
     main()

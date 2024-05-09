@@ -11,7 +11,7 @@ def detect_ranges(L):
     Returns:
     list: A list of tuples, where each tuple represents a range of consecutive numbers.
     """
-    # Sort the input list   
+    # Sort the input list
     L_sorted = sorted(L)
 
     # Initialize an empty list to hold the ranges

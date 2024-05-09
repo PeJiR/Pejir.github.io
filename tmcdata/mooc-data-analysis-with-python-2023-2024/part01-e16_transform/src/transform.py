@@ -21,9 +21,7 @@ def transform(s1, s2):
      
 
 def main():
-    print(transform("1 5 3", "2 6 -1"))  # Output: [2, 30, -3]
-
-
+    pass
 
 if __name__ == "__main__":
     main()
