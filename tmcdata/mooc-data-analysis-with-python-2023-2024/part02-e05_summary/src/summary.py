@@ -43,7 +43,7 @@ def summary(filename: str) -> tuple:
         # is the square root of the variance divided
         # by the degrees of freedom. The degrees of
         # freedom is the number of data points minus
-        # one.
+        # one. 
         std = math.sqrt(mean_squared_diff / (count - 1))
 
     return total, avg, std
