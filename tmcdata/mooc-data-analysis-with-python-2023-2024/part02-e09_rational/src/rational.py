@@ -1,7 +1,45 @@
 #!/usr/bin/env python3
 
 class Rational(object):
-    pass
+    def __init__(self, numerator, denominator):
+        self.numerator = numerator
+        self.denominator = denominator
+        
+    def __str__(self):
+        return f"{self.numerator} / {self.denominator}"
+    
+    def __mul__(num1, num2):
+        return Rational(
+            num1.numerator * num2.numerator, num1.denominator * num2.denominator
+        )
+    
+    def __truediv__(num1, num2):
+        return Rational(            
+            num1.numerator * num2.denominator, num1.denominator * num2.numerator
+        )
+        
+    def __add__(num1, num2):
+        return Rational(
+            num1.numerator * num2.denominator + num1.denominator * num2.numerator,
+            num1.denominator * num2.denominator
+        )
+    
+    def __sub__(num1, num2):
+        return Rational(
+            num1.numerator * num2.denominator - num1.denominator * num2.numerator,
+            num1.denominator * num2.denominator
+        )
+    
+    def __eq__(num1, num2):
+        return num1.numerator * num2.denominator == num1.denominator * num2.numerator
+    
+    def __lt__(num1, num2):
+        return num1.numerator * num2.denominator < num1.denominator * num2.numerator
+    
+    def __gt__(num1, num2):
+        return num1.numerator * num2.denominator > num1.denominator * num2.numerator
+        
+    
 
 def main():
     r1=Rational(1,4)

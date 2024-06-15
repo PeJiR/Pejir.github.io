@@ -43,7 +43,7 @@ def summary(filename: str) -> tuple:
         # is the square root of the variance divided
         # by the degrees of freedom. The degrees of
         # freedom is the number of data points minus
-        # one. 
+        # one.
         std = math.sqrt(mean_squared_diff / (count - 1))
 
     return total, avg, std
@@ -52,10 +52,7 @@ def summary(filename: str) -> tuple:
 def main():
     for filename in sys.argv[1:]:
         total, avg, std = summary(filename)
-        print(
-            f"File: {filename} Sum: {total:.6f} Average: {avg:.6f} Stddev: {std:.6f}",
-            end="\n",
-        )
+        print(f"File: {filename} Sum: {total:.6f} Average: {avg:.6f} Stddev: {std:.6f}", end="\n")
 
 
 if __name__ == "__main__":
